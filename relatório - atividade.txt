@@ -1,0 +1,28 @@
+Relatório Resumido do Projeto
+Estrutura da API
+A API foi criada com Express.js para gerenciar tarefas. Ela possui as seguintes rotas:
+
+GET /tarefas: Retorna todas as tarefas.
+GET /tarefas/:id: Retorna uma tarefa específica.
+POST /tarefas: Cria uma nova tarefa.
+PUT /tarefas/:id: Atualiza uma tarefa existente.
+DELETE /tarefas/:id: Deleta uma tarefa.
+As funções de cada rota são implementadas no arquivo controllers.js, que manipula um array tarefas em memória.
+
+Estrutura da Aplicação (Frontend)
+A aplicação foi desenvolvida com React Native. Ela possui:
+
+App.js: Gerencia as tarefas e controla a visibilidade do formulário. Realiza requisições à API para adicionar, atualizar, excluir e listar tarefas.
+TaskForm.js: Formulário para criar ou editar tarefas. Envia dados para a API ao ser enviado.
+TaskItem.js: Exibe uma tarefa com botões para editar e deletar.
+Interação com o Backend
+Busca de Tarefas: A aplicação faz uma requisição GET para obter todas as tarefas.
+Adicionar Tarefa: Envia uma requisição POST para criar uma nova tarefa.
+Atualizar Tarefa: Envia uma requisição PUT para atualizar uma tarefa existente.
+Deletar Tarefa: Envia uma requisição DELETE para remover uma tarefa.
+
+Conclusão
+Este projeto combina uma API RESTful backend com um frontend móvel simples em React Native. 
+A API permite que as tarefas sejam manipuladas de forma eficiente, enquanto a aplicação frontend 
+fornece uma interface amigável para o usuário interagir com essas tarefas. O fluxo de trabalho de adicionar, 
+editar, excluir e visualizar tarefas é fluido e bem integrado, oferecendo uma experiência funcional e eficiente.
